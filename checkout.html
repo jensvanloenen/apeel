@@ -49,9 +49,9 @@
 	  <div class="container">
   
     <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-      <h2>Checkout form</h2>
-      <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+      <img class="d-block mx-auto mb-4" src="file:///Macintosh HD/Users/jens/Documents/GitHub/apeel_website/images/logo_transparent.png" alt="" width="170" height="160">
+      <h2>Checkout Cart</h2>
+      <p class="lead">Please confirm your selected product(s), then fill out your billing/shipping adress and your paymenth method.</p>
 	  </div>
     </div>
 
@@ -59,40 +59,26 @@
       <div class="col-md-5 col-lg-4 order-md-last">
         <h4 class="d-flex justify-content-between align-items-center mb-3">
           <span class="text-primary">Your cart</span>
-          <span class="badge bg-primary rounded-pill">3</span>
+          <span class="badge bg-primary rounded-pill">1</span>
         </h4>
         <ul class="list-group mb-3">
           <li class="list-group-item d-flex justify-content-between lh-sm">
             <div>
-              <h6 class="my-0">Product name</h6>
-              <small class="text-muted">Brief description</small>
+              <h6 class="my-0">DURA watch</h6>
+              <small class="text-muted">Beige strap</small>
             </div>
-            <span class="text-muted">$12</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Second product</h6>
-              <small class="text-muted">Brief description</small>
-            </div>
-            <span class="text-muted">$8</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Third item</h6>
-              <small class="text-muted">Brief description</small>
-            </div>
-            <span class="text-muted">$5</span>
+            <span class="text-muted">€350</span>
           </li>
           <li class="list-group-item d-flex justify-content-between bg-light">
             <div class="text-success">
               <h6 class="my-0">Promo code</h6>
-              <small>EXAMPLECODE</small>
+              <small>LAUNCH10</small>
             </div>
-            <span class="text-success">−$5</span>
+            <span class="text-success">−€10</span>
           </li>
           <li class="list-group-item d-flex justify-content-between">
             <span>Total (USD)</span>
-            <strong>$20</strong>
+            <strong>€340</strong>
           </li>
         </ul>
 
@@ -129,8 +115,26 @@
               <div class="invalid-feedback">
                 Please enter a valid email address for shipping updates.
               </div>
+            
+			  </div>
+<div class="col-md-5">
+              <label for="country" class="form-label">Country</label>
+              <select class="form-select" id="country" required>
+                <option value="">Choose...</option>
+                  <option>The Netherlands</option>
+				  <option>Belgium</option>
+				  <option>Germany</option>
+				  <option>United Kingdom</option>
+				  <option>France</option>
+				  <option>Spain</option>
+				  <option>Italy</option>
+				  <option>Switzerland</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
             </div>
-
+			  
             <div class="col-12">
               <label for="address" class="form-label">Address</label>
               <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
@@ -139,22 +143,11 @@
               </div>
             </div>
 
-            <div class="col-md-5">
-              <label for="country" class="form-label">Country</label>
-              <select class="form-select" id="country" required>
-                <option value="">Choose...</option>
-                <option>United States</option>
-              </select>
-              <div class="invalid-feedback">
-                Please select a valid country.
-              </div>
-            </div>
-
             <div class="col-md-3">
-              <label for="zip" class="form-label">Zip</label>
+              <label for="zip" class="form-label">City</label>
               <input type="text" class="form-control" id="zip" placeholder="" required>
               <div class="invalid-feedback">
-                Zip code required.
+                City required.
               </div>
             </div>
           </div>
@@ -227,7 +220,7 @@
 
           <hr class="my-4">
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Place Order</button>
         </form>
       </div>
     </div>
